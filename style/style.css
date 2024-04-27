@@ -151,7 +151,7 @@ div.container-txt > h1{
 div.container-txt > p{
     width: 80%;
     text-align: justify;
-    font-size: 15px;
+    font-size: 14px;
     font-family: var(--fonteSecundaria);
 }
 
