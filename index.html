@@ -9,6 +9,7 @@
 </head>
 
 <body>
+   
     <header>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -30,6 +31,7 @@
         </script>
     </header>
     <section>
+      
         <a name="inicio"></a>
         <article class="inicio">
             <div class="container-forma">
@@ -134,21 +136,33 @@
                     </div>
                 </div>
             </div>
+       
         </article>
+   
         <article class="form">
             <h1>Receba as novidades!</h1>
             <div class="container-form">
                 <div class="container-icon"><img src="imagens/Email.png" alt="email-icon"></div>
                 <div class="detalhe"></div>
-                <form action="">
+                <form id="dados" method="post">
                     <label for="txtNome">Nome</label>
                     <input type="text" name="txtNome" id="txtNome" placeholder="Davi de Souza" required>
                     <label for="txtEmail">Email</label>
-                    <input type="email" name="txtEmail" id="txtEmail" placeholder="Ex: email.mail.com" required>
-                    <input type="submit" value="Cadastrar" id="btn">
+                    <input type="email" name="txtEmail" id="txtEmail" placeholder="Ex: email@gmail.com" required>
+                    <button type="submit" id="btn">
+                        Enviar
+                    </button>
                 </form>
             </div>
+            <script src="js/formulario.js"></script>
+            <div class="notification" id="aviso">
+                <img src="imagens/warning.png" alt="aviso-icon">
+                <br/>
+                <p id="notification-txt">Dados enviados</p>
+                <span class="notification-progress" id="progresso"></span>
+            </div>
         </article>
+      
         <a href="faq"></a>
         <article class="faq">
             <h1>FAQ</h1>
